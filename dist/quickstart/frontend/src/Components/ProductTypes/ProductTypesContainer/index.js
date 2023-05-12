@@ -1,0 +1,14 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(require("react"));
+const index_module_scss_1 = __importDefault(require("./index.module.scss"));
+const TypeContainer = (props) => (<div className={index_module_scss_1.default.container}>
+    <h4 className={index_module_scss_1.default.header}>{props.productType}</h4>
+    {props.children}
+  </div>);
+TypeContainer.displayName = "TypeContainer";
+exports.default = TypeContainer;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi8uLi9xdWlja3N0YXJ0L2Zyb250ZW5kL3NyYy9Db21wb25lbnRzL1Byb2R1Y3RUeXBlcy9Qcm9kdWN0VHlwZXNDb250YWluZXIvaW5kZXgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O0FBQUEsa0RBQTBCO0FBRTFCLDRFQUF5QztBQU96QyxNQUFNLGFBQWEsR0FBb0IsQ0FBQyxLQUFLLEVBQUUsRUFBRSxDQUFDLENBQ2hELENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxDQUFDLDJCQUFNLENBQUMsU0FBUyxDQUFDLENBQy9CO0lBQUEsQ0FBQyxFQUFFLENBQUMsU0FBUyxDQUFDLENBQUMsMkJBQU0sQ0FBQyxNQUFNLENBQUMsQ0FBQyxDQUFDLEtBQUssQ0FBQyxXQUFXLENBQUMsRUFBRSxFQUFFLENBQ3JEO0lBQUEsQ0FBQyxLQUFLLENBQUMsUUFBUSxDQUNqQjtFQUFBLEVBQUUsR0FBRyxDQUFDLENBQ1AsQ0FBQztBQUVGLGFBQWEsQ0FBQyxXQUFXLEdBQUcsZUFBZSxDQUFDO0FBRTVDLGtCQUFlLGFBQWEsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcblxuaW1wb3J0IHN0eWxlcyBmcm9tIFwiLi9pbmRleC5tb2R1bGUuc2Nzc1wiO1xuXG5pbnRlcmZhY2UgUHJvcHMge1xuICBjaGlsZHJlbj86IFJlYWN0LlJlYWN0Tm9kZSB8IEFycmF5PFJlYWN0LlJlYWN0Tm9kZT47XG4gIHByb2R1Y3RUeXBlOiBzdHJpbmc7XG59XG5cbmNvbnN0IFR5cGVDb250YWluZXI6IFJlYWN0LkZDPFByb3BzPiA9IChwcm9wcykgPT4gKFxuICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLmNvbnRhaW5lcn0+XG4gICAgPGg0IGNsYXNzTmFtZT17c3R5bGVzLmhlYWRlcn0+e3Byb3BzLnByb2R1Y3RUeXBlfTwvaDQ+XG4gICAge3Byb3BzLmNoaWxkcmVufVxuICA8L2Rpdj5cbik7XG5cblR5cGVDb250YWluZXIuZGlzcGxheU5hbWUgPSBcIlR5cGVDb250YWluZXJcIjtcblxuZXhwb3J0IGRlZmF1bHQgVHlwZUNvbnRhaW5lcjtcbiJdfQ==
