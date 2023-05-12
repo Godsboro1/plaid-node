@@ -1,13 +1,9 @@
-FROM node:15
-
-# Create app directory
-WORKDIR /usr/src/app
-
-# Copy app to directory
-COPY . /usr/src/app
-
-RUN npm install
-
-CMD ["make", "test"]
-
-
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+ARG JAVA_OPTS
+ENV JAVA_OPTS=$JAVA_OPTS
+COPY target/quickstart-1.0-SNAPSHOT.jar plaidnode.jar
+EXPOSE 3000
+ENTRYPOINT exec java $JAVA_OPTS -jar plaidnode.jar
+# For Spring-Boot project, use the entrypoint below to reduce Tomcat startup time.
+#ENTRYPOINT exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar plaidnode.jar
