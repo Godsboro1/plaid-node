@@ -11,4 +11,4 @@ jobs:
           command: docker build -t plaid-node .
       - run:
           name: Run node tests in Docker
-          command: docker run --rm -e CLIENT_ID=$CLIENT_ID -e SECRET=$SECRET plaid-node
+          command: docker run --rm -e 6218561cf482bb001afe38b5=$6218561cf482bb001afe38b5 -e 55a29f1168f0e302bfe6f12d0f71e2=$55a29f1168f0e302bfe6f12d0f71e2 plaid-node
